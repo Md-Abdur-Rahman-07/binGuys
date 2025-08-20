@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/fevicon.png">
+    <title>Breezy | Testimonials</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .slider-container-2 {
+            background-image: url(assets/img/rvw.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            position: relative;
+            max-width: 1100px;
+            width: 95%;
+            background-color: var(--secondary-color);
+            padding: 2rem 5rem 1rem 5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 5rem auto 8rem auto;
+        }
+
+        .slide2 {
+            display: none;
+            transition: opacity 1s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .slide2.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .slide2 h2 {
+            font-weight: 600;
+            font-size: 28px;
+            margin-top: 1rem;
+            font-family: var(--font-barlowC);
+        }
+
+        .slide2 p {
+            font-weight: 400;
+            font-size: 18px;
+            font-family: var(--font-lato);
+            line-height: 30px;
+
+        }
+
+        .indicators {
+            margin-bottom: 10px;
+        }
+
+        .indicator {
+            border: 1.5px solid black;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .indicator.active {
+            border: 1.5px solid var(--btn-hover);
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            font-size: 25px;
+            color: var(--btn-hover);
+        }
+
+        .navigation {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+
+        .nav-button2 {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        .nav-button2 div {
+            background: var(--primary-color);
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-button2 div img {
+            height: 25px;
+        }
+
+        .nav-button2:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .q-overlay {
+            position: absolute;
+            z-index: 1;
+            margin-left: -2rem;
+        }
+
+        @media (max-width:768px) {
+            .slider-container-2 {
+                padding: 2rem 1rem 1rem 1rem;
+                background-position: center;
+            }
+
+            .q-overlay {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container-fluid">
+
+                <a class="nav-link logo-mobile" href="home.html"><img src="assets/img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <div class="dropdown nav-item">
+                            <a class="drop-a" href="service.html" role="button" id="dropdownMenuLink"
+                                aria-expanded="false">
+                                Services &nbsp;
+                            </a>
+                            <a href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="service.html#valet-trash">Trash</a></li>
+                                <li><a class="dropdown-item" href="service.html#valet-recycling">Recycling</a></li>
+                                <li><a class="dropdown-item" href="service.html#junk-removal">Junk (Coming Soon)</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item logo">
+                            <a class="nav-link" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                        </li>
+
+
+
+                        <div class="dropdown nav-item">
+                            <a class="drop-a" href="contact.html" id="dropdownMenuLink" aria-expanded="false">
+                                Contact &nbsp;
+                            </a>
+                            <a href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="index.html#contact">Request a Quote</a></li>
+                                <li><a class="dropdown-item" href="about.html#join">Join our Team</a></li>
+                                <li><a class="dropdown-item" href="contact.html#support">Support</a></li>
+                            </ul>
+                        </div>
+
+
+                        <li class="nav-item quote">
+                            <a href="index.html#contact" class="btn-breezy">Get A Quote</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider-container-2">
+            <div class="indicators">
+                <span class="indicator active" onclick="showSlide(0)"></span>
+                <span class="indicator" onclick="showSlide(1)"></span>
+                <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+            <div class="q-overlay"><img src="assets/img/quote.png" alt=""></div>
+            <div class="slide2 active">
+                <h2>Jony Martin</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="slide2">
+                <h2>Jane Doe</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="slide2">
+                <h2>John Smith</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="navigation">
+
+                <button class="nav-button2" onclick="prevSlide()">
+                    <div>
+                        <img src="assets/img/prev.png" alt="">
+                    </div>
+                </button>
+                <button class="nav-button2" onclick="nextSlide()">
+                    <div>
+                        <img src="assets/img/next.png" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container row">
+            <div class="col-md-3">
+                <img src="assets/img/logo.png" alt="" class="footer-logo">
+            </div>
+
+
+            <div class="footer-left col-md-3 col-12">
+                <ul class="footer-list">
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#contact">Request A Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-center col-md-3">
+                <ul class="footer-list mb-3">
+                    <li><a href="about.html#join">Join Our Team</a></li>
+                    <li><a href="contact.html#support">Support</a></li>
+                </ul>
+                <a class="btn-breezy" href="index.html#contact">Get A Quote</a>
+            </div>
+
+            <div class="footer-right col-md-3">
+                <ul class="footer-info">
+                    <li>Email: <br>
+                        <a href="mailto:team@bebreezy.co">Team@bebreezy.Co</a>
+                    </li>
+                    <li>Phone Number: <br>
+                        <a href="#">+12345 67890</a>
+                    </li>
+                    <li>Operating Hours: <br> <a href="#">Mon-Fri 9:00 AM to 4:00 PM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Breezy 2024 | All Rights Reserved</p>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@thebinguysco" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a href="https://www.linkedin.com/company/thebinguysco/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/thebinguysco/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide2');
+        const indicators = document.querySelectorAll('.indicator');
+        let slideInterval = setInterval(nextSlide, 3000);
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            indicators[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+            resetInterval();
+        }
+
+        function prevSlide() {
+            let newIndex = currentSlide - 1;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            showSlide(newIndex);
+        }
+
+        function nextSlide() {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            showSlide(newIndex);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 3000);
+        }
+    </script>
+    <script src="assets/script.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

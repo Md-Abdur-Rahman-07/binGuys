@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/img/fevicon.png">
+  <title>Breezy | Home</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!-- Header -->
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+
+            <a class="nav-link logo-mobile" href="home.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <div class="dropdown nav-item">
+                        <a class="drop-a" href="service.html" role="button" id="dropdownMenuLink"
+                            aria-expanded="false">
+                            Services &nbsp;
+                        </a>
+                        <a href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="service.html#valet-trash">Trash</a></li>
+                            <li><a class="dropdown-item" href="service.html#valet-recycling">Recycling</a></li>
+                            <li><a class="dropdown-item" href="service.html#junk-removal">Junk (Coming Soon)</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item logo">
+                        <a class="nav-link" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                    </li>
+
+
+
+                    <div class="dropdown nav-item">
+                        <a class="drop-a" href="contact.html" id="dropdownMenuLink" aria-expanded="false">
+                            Contact &nbsp;
+                        </a>
+                        <a href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html#contact">Request a Quote</a></li>
+                            <li><a class="dropdown-item" href="about.html#join">Join our Team</a></li>
+                            <li><a class="dropdown-item" href="contact.html#support">Support</a></li>
+                        </ul>
+                    </div>
+
+
+                    <li class="nav-item quote">
+                        <a href="index.html#contact" class="btn-breezy">Get A Quote</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+  <main>
+    <!-- Intro Section -->
+    <section class="container hero mb-5">
+      <div class="row align-items-center gx-md-5">
+        <!-- Image Section -->
+        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+          <img src="assets/img/hero.png" class="img-fluid hero-img" alt="Valet Trash Team">
+        </div>
+        <!-- Text Section -->
+        <div class="col-lg-6 col-12 text-center text-md-start">
+          <h2 class="mb-4">Clean Living <span>Made Easy</span></h2>
+          <p class="mb-4">
+            Our Valet Trash services are reliable, efficient, and guaranteed to exceed your standards!
+            And because we take our promises seriously, we guarantee we'll never miss a day. If we do,
+            you'll get two additional months free.
+          </p>
+          <p class="mb-5">
+            Providing safe spaces with familiar faces. Our staff are local community professionals that
+            will ensure your tailored needs are met, making this process effortless and hassle-free.
+          </p>
+          <a href="#contact" class="btn-breezy-lg">Get A Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="container my-5 text-center service-sec">
+      <h2 class="sec-header">Our <span>Services</span></h2>
+
+      <div class="row mt-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 mb-4">
+          <div class="s-card border-0">
+            <div class="card-body">
+              <img class="s-icon mb-2" src="assets/img/trash.png" alt="">
+              <h5>Trash Pickup</h5>
+              <p>
+                No more hauling bags to dumpsters. Just leave it at your door, and we'll take it from there—effortless
+                and reliable.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 mb-4">
+          <div class="s-card border-0">
+            <div class="card-body">
+              <img class="s-icon mb-2" src="assets/img/recycle.png" alt="">
+              <h5>Recycling</h5>
+              <p>
+                Struggling with recycling? We've got it covered. Leave your recyclables outside, and we'll handle the
+                rest—simple and sustainable.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 mb-4">
+          <div class="s-card border-0">
+            <div class="card-body">
+
+              <img class="s-icon mb-2" src="assets/img/junk.png" alt="">
+              <h5>Junk Removal</h5>
+              <p>
+                Tired of bulky items taking over your space? Let us handle the hassle—your junk, our problem!
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container contact" id="contact">
+      <div class="row">
+        <div class="contact-form col-lg-6 col-12">
+          <h2 class="sec-header">Contact <span>Us</span></h2>
+          <p>Contact us for a Quote! We Answer in 24 Hours.</p>
+          <!-- form of getting quote -->
+          <p id="message" class="message">
+
+          </p>
+          <style>
+            .message{
+              font-size: 30px;
+              font-weight: bold;
+              padding: 1rem 2rem;
+              border: 2px solid;
+              border-radius: 30px;
+              background-color: #393939;
+              transition: display 0.4s ease;
+            }
+            .success{
+              color: #2ffa2f;
+              border-color: #2ffa2f;
+            }
+            .error{
+              color: #fe2f18;
+              border-color: #fe2f18;
+            }
+          </style>
+          <form method="post" action="mail/quote.php">
+            <div class="form-group">
+              <input type="text" name="firstname" placeholder="Full Name" required />
+              <input type="text" name="lastname" placeholder="Last Name" required />
+          </div>
+          <div class="form-group">
+              <input type="email" name="email" placeholder="Email Address" required />
+              <input type="tel" name="phone" placeholder="Phone No." required pattern="\d{10}" maxlength="10"  
+              title="Phone number must be followed by exactly 10 digits."/>
+          </div>
+          <div class="form-group">
+              <input type="number" name="price" placeholder="# Of Units" required />
+              <input type="text" name="propertyname" id="" placeholder="Property Name" required>
+              
+          </div>
+          <div class="form-group">
+            <input type="text" name="propertyaddress" placeholder="Property Address" required />
+          </div>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+
+        <div class=" col-lg-5 col-12">
+          <div class="get-in-touch">
+            <h3>Get In Touch</h3>
+            <ul>
+              <li>
+                <img src="assets/img/Call.png" alt="">
+                <p><span>Call Us</span><br> +12345 67890</p>
+              </li>
+              <li>
+                <img src="assets/img/Location.png" alt="">
+                <p><span>Address</span><br> Austin, TX</p>
+              </li>
+              <li>
+                <img src="assets/img/Message.png" alt="">
+                <p><span>Email Us</span><br> team@bebreezy.co</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container gallery">
+      <h2 class="sec-header">Our <span>Gallery</span></h2>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g1.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g2.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g3.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g4.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g5.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g6.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g7.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12">
+          <div class="img-box">
+            <img src="assets/img/g8.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Gallery Slider for Mobile -->
+    <section class="container mobile-slider">
+      <h2 class="sec-header">Our <span>Gallery</span></h2>
+      <div class=" slider-container">
+        <div class="slider">
+          <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g1.png" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g2.png" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g3.png" alt="">
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g4.png" alt="">
+            </div>
+          </div>
+            <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g5.png" alt="">
+            </div>
+          </div>
+            <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g6.png" alt="">
+            </div>
+          </div>
+            <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g7.png" alt="">
+            </div>
+          </div>
+            <div class="slider-item">
+            <div class="img-box">
+              <img src="assets/img/g8.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-buttons">
+        <button class="nav-button prev">
+          <div>
+            <img src="assets/img/prev.png" alt="">
+          </div>
+        </button>
+        <button class="nav-button next">
+          <div>
+            <img src="assets/img/next.png" alt="">
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <style>
+      .guarantee{
+          border: 2.5px solid #3FFFAE;
+          border-radius: 20px;
+          padding: 5rem 1rem;
+          background: #2b2b2b;
+          box-shadow:0 0 10px 5px grey;
+          margin-bottom: 10rem;
+      }
+      .guarantee .card-body {
+
+  aspect-ratio: 1/1;
+
+}
+.guarantee .s-card .s-icon {
+  height: 60px;
+}
+      .guarantee .s-card {
+            box-shadow:0 0 10px 2px black;
+transition: all 0.3s ease;
+}
+      .guarantee .s-card:hover {
+transform:translateY(-15px) ;
+
+}
+  </style>
+    <section class="container guarantee">
+      <!-- <div class="bg-overlay">
+        <img src="assets/img/guarantee-border.png" alt="">
+      </div> -->
+      <h2 class="sec-header text-center ">
+        &nbsp;&nbsp; Our <span>Guarantees</span>
+      </h2>
+
+      <div class="row mt-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 my-3">
+          <div class="s-card border-0">
+            <div class="card-body">
+              <img class="s-icon mb-2" src="assets/img/promise.png" alt="">
+              <h5>Deliver What We <br> Promise.</h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 my-3">
+          <div class="s-card border-0">
+            <div class="card-body">
+              <img class="s-icon mb-2" src="assets/img/time.png" alt="">
+              <h5>There Every <br> Time.</h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 my-3">
+          <div class="s-card border-0">
+            <div class="card-body">
+
+              <img class="s-icon mb-2" src="assets/img/expect.png" alt="">
+              <h5>Exceeding <br> Expectations.</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container row">
+      <div class="col-md-3">
+        <img src="assets/img/logo.png" alt="" class="footer-logo">
+      </div>
+
+
+      <div class="footer-left col-md-3 col-12">
+        <ul class="footer-list">
+          <li><a href="service.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#contact">Request A Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-center col-md-3">
+        <ul class="footer-list mb-3">
+          <li><a href="about.html#join">Join Our Team</a></li>
+          <li><a href="contact.html#support">Support</a></li>
+        </ul>
+        <a class="btn-breezy" href="index.html#contact">Get A Quote</a>
+      </div>
+
+      <div class="footer-right col-md-3">
+        <ul class="footer-info">
+          <li>Email: <br>
+            <a href="mailto:team@bebreezy.co">Team@bebreezy.Co</a>
+          </li>
+          <li>Phone Number: <br>
+            <a href="#">+12345 67890</a>
+          </li>
+          <li>Operating Hours: <br> <a href="#">Mon-Fri 9:00 AM to 4:00 PM</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Breezy 2024 | All Rights Reserved</p>
+      <div class="footer-social">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://www.tiktok.com/@thebinguysco" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a href="https://www.linkedin.com/company/thebinguysco/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/thebinguysco/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="mail/js.js"></script>
+  <script src="assets/script.js"></script>
+  <!-- bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
