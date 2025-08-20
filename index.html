@@ -657,6 +657,38 @@ transform:translateY(-15px) ;
   </footer>
 
 
+   <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide2');
+        const indicators = document.querySelectorAll('.indicator');
+        let slideInterval = setInterval(nextSlide, 3000);
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            indicators[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+            resetInterval();
+        }
+
+        function prevSlide() {
+            let newIndex = currentSlide - 1;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            showSlide(newIndex);
+        }
+
+        function nextSlide() {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            showSlide(newIndex);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 3000);
+        }
+    </script>
   <script src="mail/js.js"></script>
   <script src="assets/script.js"></script>
   <!-- bootstrap JS -->
