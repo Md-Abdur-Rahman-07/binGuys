@@ -354,6 +354,187 @@
       </div>
     </section>
 
+    <!-- testimonials -->
+      <style>
+        .slider-container-2 {
+            background-image: url(assets/img/rvw.png);
+            background-position: right;
+            background-repeat: no-repeat;
+            position: relative;
+            max-width: 1100px;
+            width: 95%;
+            background-color: var(--secondary-color);
+            padding: 2rem 5rem 1rem 5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 5rem auto 8rem auto;
+        }
+
+        .slide2 {
+            display: none;
+            transition: opacity 1s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .slide2.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .slide2 h2 {
+            font-weight: 600;
+            font-size: 28px;
+            margin-top: 1rem;
+            font-family: var(--font-barlowC);
+        }
+
+        .slide2 p {
+            font-weight: 400;
+            font-size: 18px;
+            font-family: var(--font-lato);
+            line-height: 30px;
+
+        }
+
+        .indicators {
+            margin-bottom: 10px;
+        }
+
+        .indicator {
+            border: 1.5px solid black;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .indicator.active {
+            border: 1.5px solid var(--btn-hover);
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            font-size: 25px;
+            color: var(--btn-hover);
+        }
+
+        .navigation {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+
+        .nav-button2 {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        .nav-button2 div {
+            background: var(--primary-color);
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-button2 div img {
+            height: 25px;
+        }
+
+        .nav-button2:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .q-overlay {
+            position: absolute;
+            z-index: 1;
+            margin-left: -2rem;
+        }
+
+        @media (max-width:768px) {
+            .slider-container-2 {
+                padding: 2rem 1rem 1rem 1rem;
+                background-position: center;
+            }
+
+            .q-overlay {
+                display: none;
+            }
+
+        }
+    </style>
+     <div class="slider-container-2">
+            <div class="indicators">
+                <span class="indicator active" onclick="showSlide(0)"></span>
+                <span class="indicator" onclick="showSlide(1)"></span>
+                <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+            <div class="q-overlay"><img src="assets/img/quote.png" alt=""></div>
+            <div class="slide2 active">
+                <h2>Jony Martin</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="slide2">
+                <h2>Jane Doe</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="slide2">
+                <h2>John Smith</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="navigation">
+
+                <button class="nav-button2" onclick="prevSlide()">
+                    <div>
+                        <img src="assets/img/prev.png" alt="">
+                    </div>
+                </button>
+                <button class="nav-button2" onclick="nextSlide()">
+                    <div>
+                        <img src="assets/img/next.png" alt="">
+                    </div>
+                </button>
+            </div>
+        </div>
+
     <!-- Guarantee Section -->
     <style>
       .guarantee{
